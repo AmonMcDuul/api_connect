@@ -12,7 +12,7 @@ if (token) {
 logoutBtn.addEventListener('click', (e) => {
     e.preventDefault()
     localStorage.removeItem('token')
-    window.location = 'file:///C:/DjangoProjects/frontend/login.html'
+    window.location = 'login.html'
 })
 
 

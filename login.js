@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
             if (data.access) {
                 //localStorage geeft issue met firefox -> Oplossen in de toekomst.
                 localStorage.setItem('token', data.access)
-                window.location = 'file:///C:/DjangoProjects/frontend/index.html'
+                window.location = 'index.html'
             } else {
                 alert('Username OR password did not work')
             }
