@@ -17,7 +17,7 @@ logoutBtn.addEventListener('click', (e) => {
 
 
 
-let projectsUrl = 'http://amonmcduul.herokuapp.com/api/projects/'
+let projectsUrl = 'https://amonmcduul.herokuapp.com/api/projects/'
 
 let getProjects = () => {
 
@@ -38,7 +38,7 @@ let buildProjects = (projects) => {
 
         let projectCard = `
                 <div class="project--card">
-                    <img src="http://amonmcduul.herokuapp.com${project.featured_image}" />
+                    <img src="https://amonmcduul.herokuapp.com${project.featured_image}" />
                     
                     <div>
                         <div class="card--header">
@@ -71,7 +71,7 @@ let addVoteEvents = () => {
             let vote = e.target.dataset.vote
             let project = e.target.dataset.project
 
-            fetch(`http://amonmcduul.herokuapp.com/api/projects/${project}/vote/`, {
+            fetch(`https://amonmcduul.herokuapp.com/api/projects/${project}/vote/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

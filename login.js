@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
         'password': form.password.value
     }
 
-    fetch('http://amonmcduul.herokuapp.com/api/users/token/', {
+    fetch('https://amonmcduul.herokuapp.com/api/users/token/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
